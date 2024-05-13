@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #757575;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff; 
+    padding: 20px; 
+    font-family: "Roboto", sans-serif;
+}
+
+select option[value=""] {
+    display: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    font-family: "Open Sans", sans-serif;
+}
+
+div{
+    padding: 3vw;
+    margin-bottom: 4vw;
+    border-radius: 30px;
+}
+
+#projeto, #comoAceitar{
+    background-color: #ffc600;
+}
+
+#porqueUsar, #negocios{
+    background-color: #000000;
+    color: #ffffff;
+}

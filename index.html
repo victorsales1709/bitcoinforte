@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Forte</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=DM+Sans:opsz,wght@9..40,300&family=Lato:wght@100;300;400;700&family=Open+Sans&family=Oswald:wght@700&family=Poppins:wght@400;900&family=Quattrocento+Sans&family=Raleway:wght@900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300;700&display=swap');
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#projeto">PROJETO</a>
+        <img src="images/bitcoinfortelogo.jpg" alt="logo" style="height: 64px; width: 64px;"/>
+        <select id="secaoSelect" onchange="goToSection(this.value)">
+                <option value="#porqueUsar">POR QUE USAR</option>
+                <option value="#comoAceitar">COMO ACEITAR</option>
+                <option value="#negocios">NEGÓCIOS QUE ACEITAM</option>
+        </select>
+    </nav>
+
+    <main>
+        <div id="projeto">
+            <h2>Projeto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem eveniet nam accusamus dolor earum impedit sequi iste nobis deleniti. Vero, architecto. Repellat tenetur optio repudiandae adipisci minima animi excepturi?</p>
+        </div>
+
+        <div id="porqueUsar">
+            <h2>Por que usar BTC</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem eveniet nam accusamus dolor earum impedit sequi iste nobis deleniti. Vero, architecto. Repellat tenetur optio repudiandae adipisci minima animi excepturi?
+            </p>
+        </div>
+
+        <div id="comoAceitar">
+            <h2>Como aceitar BTC</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem eveniet nam accusamus dolor earum impedit sequi iste nobis deleniti. Vero, architecto. Repellat tenetur optio repudiandae adipisci minima animi excepturi?</p>
+        </div>
+
+        <div id="negocios">
+            <h2>Negócios que aceitam BTC</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem eveniet nam accusamus dolor earum impedit sequi iste nobis deleniti. Vero, architecto. Repellat tenetur optio repudiandae adipisci minima animi excepturi?</p>
+        </div>
+
+        <script>
+            function goToSection(sectionId) {
+                if (sectionId) {
+                    var sectionElement = document.getElementById(sectionId.substring(1));
+                    if (sectionElement) {
+                        sectionElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            }
+        </script>
+    </main>
+</body>
+</html>
