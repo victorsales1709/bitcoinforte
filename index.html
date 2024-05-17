@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitcoin Forte</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=DM+Sans:opsz,wght@9..40,300&family=Lato:wght@100;300;400;700&family=Open+Sans&family=Oswald:wght@700&family=Poppins:wght@400;900&family=Quattrocento+Sans&family=Raleway:wght@900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300;700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -13,13 +13,15 @@
 <body>
     <nav>
         <a href="#projeto">PROJETO</a>
-        <img src="images/bitcoinfortelogo.jpg" alt="logo" style="height: 64px; width: 64px;" class="logo"/>
-        <select id="secaoSelect" onchange="goToSection(this.value)">
-            <option value="#bitcoin">BITCOIN</option>
-            <option value="#porqueUsar">POR QUE USAR</option>
-            <option value="#comoAceitar">COMO ACEITAR</option>
-            <option value="#negocios">NEGÓCIOS QUE ACEITAM</option>
-        </select>
+        <img src="images/bitcoinfortelogo.jpg" alt="logo" style="height: 7.5vw; width: 7.5vw;" class="logo"/>
+        <section class="custom-select">
+            <select id="secaoSelect" onchange="goToSection(this.value)">
+                <option value="#bitcoin">BITCOIN</option>
+                <option value="#porqueUsar">POR QUE USAR</option>
+                <option value="#comoAceitar">COMO ACEITAR</option>
+                <option value="#negocios">NEGÓCIOS QUE ACEITAM</option>
+            </select>      
+        </section>
     </nav>
 
     <main>

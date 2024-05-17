@@ -1,57 +1,124 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #757575;
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom left, #969696, #000000)}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2vw;
+  font-family: "Roboto", sans-serif; }
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+  width: 18vw;
+  font-size: 3vh;
+  font-weight: 600;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 30px;
+  transition: background-color 0.5s;
+  font-family: "Montserrat", sans-serif; }
+
+a:hover{
+  background-color: #282828;
 }
 
+.custom-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18vw; }
 
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #ffffff; 
-    padding: 2vw; 
-    font-family: "Roboto", sans-serif;
+#secaoSelect {
+  width: 22vw;
+  font-size: 3vh;
+  padding: 2vw;
+  background-color: #ffc600;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer; 
+  transition: background-color 0.5s;
 }
 
-a{
-    padding: 2vw;
-    width: 18vw;
-    font-size: 3vh;
-    background-color: #000000;
-    color: #ffffff;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 30px;
-    font-family: "Montserrat", sans-serif;
+#secaoSelect:hover{
+  background-color:#ffea63;
+  color: #000000;
 }
-
-#secaoSelect{
-    width: 18vw; 
-  }
 
 select option[value=""] {
-    display: none;
+  display: none; }
+
+select option {
+  display: flex;
+  text-align: start;
+  font-size: 2vh; 
 }
 
-main{
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+  font-family: "Open Sans", sans-serif; }
+
+div {
+  padding: 3vw;
+  margin-bottom: 4vw;
+  border-radius: 30px; }
+
+#projeto, #comoAceitar {
+  background-image: linear-gradient(to top left, #ffc600, #e7e9c9); }
+
+#porqueUsar, #negocios {
+  background-image: linear-gradient(to top left, #333333, #000000); 
+  color: #ffffff; }
+
+
+/*Versão para dispositivos móveis*/
+@media screen and (max-width: 900px) {
+  nav{
+    gap: 2vw;
     display: flex;
     flex-direction: column;
-    padding: 5vw;
-    font-family: "Open Sans", sans-serif;
-}
+  }
 
-div{
-    padding: 3vw;
-    margin-bottom: 4vw;
-    border-radius: 30px;
-}
+  a{
+    margin: 2vw;
+    width: 60vw;
+    height: 10vh;
+  }
 
-#projeto, #comoAceitar{
-    background-color: #ffc600;
-}
+  .custom-select{
+    margin: 2vw;
+    margin-bottom: 6vw;
+    width: 60vw;
+    height: 10vh;
+  }
 
-#porqueUsar, #negocios{
-    background-color: #000000;
-    color: #ffffff;
+  #secaoSelect{
+    text-align: center;
+    width: 64vw;
+    height: 12vh;
+  }
+
+  select option{
+    text-align: center;
+  }
+
+  .logo{
+    transform: scale(3);
+    margin: 8vh;
+    order: -1;
+  }
 }
