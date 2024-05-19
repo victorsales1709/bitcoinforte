@@ -5,57 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitcoin Forte</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=DM+Sans:opsz,wght@9..40,300&family=Lato:wght@100;300;400;700&family=Open+Sans&family=Oswald:wght@700&family=Poppins:wght@400;900&family=Quattrocento+Sans&family=Raleway:wght@900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300;700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#projeto">PROJETO</a>
-        <img src="images/bitcoinfortelogo.jpg" alt="logo" style="height: 7.5vw; width: 7.5vw;" class="logo"/>
-        <section class="custom-select">
-            <select id="secaoSelect" onchange="goToSection(this.value)">
-                <option value="#bitcoin">BITCOIN</option>
-                <option value="#porqueUsar">POR QUE USAR</option>
-                <option value="#comoAceitar">COMO ACEITAR</option>
-                <option value="#negocios">NEGÓCIOS QUE ACEITAM</option>
-            </select>      
-        </section>
+    <nav id="navbar">
+        <div class="logo-container">
+            <img src="images/bitcoinfortelogo.png" alt="logo" class="logo"/>
+        </div>
+        <ul id="nav-list" onchange="goToSection(this.value)">
+            <li><a class="nav-item" href="#projeto">PROJETO</a></li>
+            <li><a class="nav-item" href="#porqueUsar">POR QUE USAR BTC</a></li>
+            <li><a class="nav-item" href="#comoAceitar">COMO ACEITAR BTC</a></li>
+            <li><a class="nav-item" href="#negocios">NEGÓCIOS QUE ACEITAM BTC</a></li>    
+        </ul>
     </nav>
 
     <main>
+        <div id="intro">
+            <a class="text">"O Bitcoin é o sistema mais estelar e mais útil de confiança mútua já concebido." - Satoshi Nakamoto</a>
+            <div class="btcimg-container">
+                <img src="images/btc.webp" alt="btcimg" class="btcimg"/>
+            </div>
+        </div>
+
         <div id="projeto">
-            <h2>Projeto</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem eveniet nam accusamus dolor earum impedit sequi iste nobis deleniti. Vero, architecto. Repellat tenetur optio repudiandae adipisci minima animi excepturi?</p>
+            <h1>PROJETO</h1>
+            <p>O Projeto Bitcoin Forte é uma iniciativa voluntária de trazer informações sobre a importância do Bitcoin e estimular seu uso como moeda para os comerciantes.</p>
+
         </div>
 
         <div id="porqueUsar">
-            <h2>Por que usar BTC</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem eveniet nam accusamus dolor earum impedit sequi iste nobis deleniti. Vero, architecto. Repellat tenetur optio repudiandae adipisci minima animi excepturi?
-            </p>
+            <div class="btcrocket-container">
+                <img src="images/bitcoinrocket.png" alt="bitcoinrocket" class="bitcoinrocket"/>
+            </div>
+            <a class="text">
+                <h1>POR QUE USAR BITCOIN</h1>
+                <p>O Bitcoin é uma moeda internacional, bastante usada por turistas. Possui uma quantidade máxima de unidades, tendo sua emissão controlada para evitar aumento de preços sistemáticos de mercadorias. É fácil, barato e seguro de usar, se for feito da maneira correta.</p>
+            </a>
         </div>
 
         <div id="comoAceitar">
-            <h2>Como aceitar BTC</h2>
+            <h2>COMO ACEITAR BITCOIN</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem eveniet nam accusamus dolor earum impedit sequi iste nobis deleniti. Vero, architecto. Repellat tenetur optio repudiandae adipisci minima animi excepturi?</p>
         </div>
 
         <div id="negocios">
-            <h2>Negócios que aceitam BTC</h2>
+            <h1>NEGÓCIOS QUE ACEITAM BITCOIN</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem eveniet nam accusamus dolor earum impedit sequi iste nobis deleniti. Vero, architecto. Repellat tenetur optio repudiandae adipisci minima animi excepturi?</p>
         </div>
-
-        <script>
-            function goToSection(sectionId) {
-                if (sectionId) {
-                    var sectionElement = document.getElementById(sectionId.substring(1));
-                    if (sectionElement) {
-                        sectionElement.scrollIntoView({ behavior: 'smooth' });
-                    }
-                }
-            }
-        </script>
     </main>
 </body>
 </html>
