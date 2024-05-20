@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: linear-gradient(to left, #88d7ff, #d0f9f5);
+  background-color: #000080;
 }
 
 #navbar {
@@ -41,7 +41,7 @@ body {
 
 #nav-list a{
   text-decoration: none;
-  color:#ff8000;
+  color:#FFA500;
   font-size: 1.2vw;
   transition: 0.5s;
   border-radius: 5px;
@@ -71,7 +71,7 @@ main {
 #intro .text{
   width: 50vw;
   font-size: 3vw;
-  color:#000;
+  color:#FFA500;
 }
 
 .btcimg-container{
@@ -106,7 +106,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: #000000;
+  color:#FFA500;
   width: 100%;
   margin-top: 15vh;
 }
@@ -119,8 +119,6 @@ main {
 }
 
 .bitcoinrocket{
-
-
   border-radius: 30px;
 }
 
@@ -136,9 +134,45 @@ main {
   margin-bottom: 4vh;
 }
 
-/* #porqueUsar, #negocios {
-  background-image: linear-gradient(to top left, #333333, #000000); 
-  color: #ffffff; } */
+#comoAceitar{
+  display: flex;
+  margin-top: 15vh;
+  color:#FFA500;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8vw;
+}
+
+#comoAceitar .passos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10vh;
+  
+}
+
+#comoAceitar h1{
+  font-size: 3.5vw;
+  margin-bottom: 4vh;
+}
+
+#comoAceitar .passos{
+
+}
+
+#comoAceitar .passos .print-container{
+}
+
+#comoAceitar .passos .print-container img{
+  max-height: 90vh;
+}
+
+
+#negocios{
+  margin-top: 15vh;
+}
+
+
 
 
 /*Versão para dispositivos móveis*/
