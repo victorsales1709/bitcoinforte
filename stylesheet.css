@@ -230,6 +230,7 @@ main {
   font-size: 1.2vw;
   font-weight: 500;
   text-decoration: none;
+  color: #ffffff;
 }
 
 /*Versão para dispositivos móveis*/
@@ -278,6 +279,107 @@ main {
   .logo{
     height: 18vw;
     width: 18vw;
+  }
+
+  #intro{
+    flex-direction: column;
+    max-width: 80vw;
+    gap: 8vh;
+  }
+
+  #intro .text{
+    width: 80vw;
+    font-size: 6vw;
+    line-height: 2em;
+  }
+
+  #intro .btcimg-container .btcimg{
+    height: 70vw;
+    width: 70vw;
+  }
+
+  #projeto{
+    width: 100%;
+    height: auto;
+  }
+
+  #projeto h1{
+    font-size: 12vw;
+  }
+
+  #projeto p{
+    font-size: 6.5vw;
+  }
+
+  #porqueUsar{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btcrocket-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bitcoinrocket{
+    width: 60vw;
+  }
+
+  #porqueUsar .text{
+    width: 80vw;
+  }
+
+  #porqueUsar .text h1{
+    font-size: 10vw;
+  }
+
+  #porqueUsar .text p{
+    font-size: 5vw;
+  }
+
+  #comoAceitar .passos .text{
+    width: 80vw;
+  }
+
+  #comoAceitar .passos .text h1{
+    font-size: 10vw;
+  }
+
+  #comoAceitar .passos .text h3{
+    font-size: 8vw;
+    margin-bottom: 3vh;
+  }
+
+  #comoAceitar .passos .text p{
+    font-size: 5vw;
+  }
+
+  #negocios .text{
+    display: flex;
+    text-align: center;
+  }
+
+  #negocios .text h1{
+    font-size: 10vw;
+  }
+
+  #negocios .mapa-container .mapa{
+    width: 80vw;
+    height: 60vh;
+  }
+
+  #negocios .mapa-container .mapa-link{
+    width: 60vw;
+    height: 20vh;
+    margin-bottom: 10vh;
+  }
+
+  #footer h3{
+    font-size: 6.5vw;
+  }
+
+  #footer .icon-container p{
+    font-size: 6vw;
   }
 
 }
