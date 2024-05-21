@@ -166,6 +166,8 @@ main {
 
 #comoAceitar .passos .print-container img{
   max-height: 90vh;
+  border-radius: 15px;
+  border: 5px solid rgb(255, 225, 0);
 }
 
 #negocios{
@@ -261,19 +263,22 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2vh;
+    padding: 5vw;
     align-items: center;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10vh;
+    width: 100%;
+    background-color: #ffffff;
   } 
 
   #mobile-nav-list .nav-item{
     list-style: none;
-    
   }
 
   #mobile-nav-list .nav-item a{
     color:#FFA500;
     text-decoration: none;
+    font-size: 5.5vw;
   }
 
   .logo{
